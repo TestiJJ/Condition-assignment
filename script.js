@@ -68,21 +68,21 @@ function clearTitle() {
 }
 
 // 5
-function checkAnswer() {
-    let correctAnswer = 'Ogbomosho'
-    let studentAnswer = answerInput.value.trim();
-    if (studentAnswer == '') {
-        alert('Please write an answer');
-    } else{ 
-    let correct = correctAnswer.toLowerCase();
-    let answer = studentAnswer.toLowerCase();
+// function checkAnswer() {
+//     let correctAnswer = 'Ogbomosho'
+//     let studentAnswer = answerInput.value.trim();
+//     if (studentAnswer == '') {
+//         alert('Please write an answer');
+//     } else{ 
+//     let correct = correctAnswer.toLowerCase();
+//     let answer = studentAnswer.toLowerCase();
 
-    if (studentAnswer == '')  {
-        resultHere.innerHTML = 'correct!'
-    } else {
-        resultHere.innerHTML = 'Wrong!'
-    }
-}
+//     if (studentAnswer == '')  {
+//         resultHere.innerHTML = 'correct!'
+//     } else {
+//         resultHere.innerHTML = 'Wrong!'
+//     }
+// }
 
 
 

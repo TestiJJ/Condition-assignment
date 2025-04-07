@@ -67,8 +67,8 @@ function clearTitle() {
     
 }
 
-5
-// function checkAnswer() {}
+// 5
+// function checkAnswer() {
 //     let correctAnswer = 'Ogbomosho'
 //     let studentAnswer = answerInput.value.trim();
 //     if (studentAnswer == '') {
@@ -85,26 +85,22 @@ function clearTitle() {
 // }
 
 
-function checkAnswer() {
-    let correctAnswer = 'Ogbomosho'
-    let studentAnswer = answerInput.value.trim()
-    if (studentAnswer == '') {
-        alert ('Please write an answer')
-    } else {
-        let correct = correctAnswer.toLowerCase()
-        let answer = studentAnswer.toLowerCase()
-        if (studentAnswer == '') {
-            resultHere.innerHTML = 'Your answer is : correct!'
-        } else {
-            resultHere.innerHTML = 'Your answer is : wrong!'
-        }
+function checkAnswer(){
+    let studentAnswer = answerInput.value
+    let correctAnswer = 'ogbomosho'
+
+    if (!studentAnswer) {
+        alert('Please enter your answer'); return;        
     }
-    
+    if (studentAnswer.trim().toLowerCase() ==correctAnswer.trim().toLowerCase()) {
+        resultHere.innerHTML = 'your answer is : correct ';
+    } else {
+        resultHere.innerHTML = 'your answer is : wrong'
+    }
 }
 
 function clearAll() {
     answerInput.value = '';
-    resultHere.innerHTML = 'Enter your result'
-    
+    resultHere.innerHTML = 'Enter your answer:'
 }
 
